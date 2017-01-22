@@ -37,7 +37,7 @@ class Content extends Component {
                  <b> <p  className="HeaderReg"> an online collaborative workspace for aspiring Entrepreneurs, Engineers, and Creatives.
                  </p></b>
               </div>
-
+{/*TOC*/}
 
 {/*Mission*/}
               <Paper className="Paper-Column" zDepth={1} rounded={true}>
