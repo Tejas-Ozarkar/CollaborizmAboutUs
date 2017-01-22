@@ -1,4 +1,4 @@
-@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+@media screen and (max-width: 699px) and (min-width: 100px) {
     .Paper-Column{
         padding: 1% 10% 3% 10%;
         background-color: #fff;
