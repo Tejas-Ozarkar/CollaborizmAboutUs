@@ -8,18 +8,15 @@ import CollaborizmLogo from '../img/CollaborizmLogo.png';
 import Scroll from 'react-scroll';
 
 
+
 const Link       = Scroll.Link;
 const Element    = Scroll.Element;
 
 import injectTapEventPlugin from'react-tap-event-plugin';
-const style = {
-    height: 100,
-    width: 100,
-    margin: 20,
-    textAlign: 'center',
-    display: 'inline-block',
-};
+
 class Content extends Component {
+
+
     render() {
         injectTapEventPlugin();
         return (
@@ -45,13 +42,29 @@ class Content extends Component {
 {/*TOC*/}
               <center style={{marginTop:"3%", marginLeft: "18%",marginRight:"18%"}}><h2 className="Middle-Text"><span className="Middle-Span">
                  Table of Contents</span></h2></center>
-              <Link activeClass="active" className="test1" to="Mission" spy={true} smooth={true} duration={500} >Mission</Link>
- <Link activeClass="active" className="test1" to="power" spy={true} smooth={true} duration={500} >power</Link>
- <Link activeClass="active" className="test1" to="talent" spy={true} smooth={true} duration={500} >Talent</Link>
- <Link activeClass="active" className="test1" to="gig" spy={true} smooth={true} duration={500} >gig</Link>
- <Link activeClass="active" className="test1" to="questions" spy={true} smooth={true} duration={500} >questions</Link>
- <Link activeClass="active" className="test1" to="success" spy={true} smooth={true} duration={500} >success</Link>
- <Link activeClass="active" className="test1" to="works" spy={true} smooth={true} duration={500} >works</Link>
+              <center>
+                <div style={{float: "left"}}>
+              <p>
+                 <Link activeClass="active" className="test1" to="Mission" spy={true} smooth={true} duration={500} >1. Our Mission</Link>
+              </p>
+              <p>
+                 <Link activeClass="active" className="test1" to="power" spy={true} smooth={true} duration={500} >2. Power of Contribution</Link>
+              </p>
+              <p>
+                 <Link activeClass="active" className="test1" to="talent" spy={true} smooth={true} duration={500} >3. Working with our Talent</Link>
+              </p>
+              <p>
+                 <Link activeClass="active" className="test1" to="gig" spy={true} smooth={true} duration={500} >4. How to Post a Gig and Hire a Freelancer</Link>
+              </p>
+              <p>
+                <Link activeClass="active" className="test1" to="questions" spy={true} smooth={true} duration={500} >5. Other Questions</Link>
+              </p>
+                 <Link activeClass="active" className="test1" to="success" spy={true} smooth={true} duration={500} >6. Success Stories</Link>
+              <p>
+                 <Link activeClass="active" className="test1" to="works" spy={true} smooth={true} duration={500} >7. How Collaborizm Works</Link>
+              </p>
+                </div>
+              </center>
 
 {/*Mission*/}
               <Element name="mission">
