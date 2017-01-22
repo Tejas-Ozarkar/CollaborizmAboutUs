@@ -5,6 +5,11 @@ import {Card,CardHeader,CardText} from 'material-ui/Card';
 import MainImg from '../img/cover.png';
 import ContrImg from '../img/contribution.gif';
 import CollaborizmLogo from '../img/CollaborizmLogo.png';
+import Scroll from 'react-scroll';
+
+
+const Link       = Scroll.Link;
+const Element    = Scroll.Element;
 
 import injectTapEventPlugin from'react-tap-event-plugin';
 const style = {
@@ -38,8 +43,18 @@ class Content extends Component {
                  </p></b>
               </div>
 {/*TOC*/}
+              <center style={{marginTop:"3%", marginLeft: "18%",marginRight:"18%"}}><h2 className="Middle-Text"><span className="Middle-Span">
+                 Table of Contents</span></h2></center>
+              <Link activeClass="active" className="test1" to="Mission" spy={true} smooth={true} duration={500} >Mission</Link>
+ <Link activeClass="active" className="test1" to="power" spy={true} smooth={true} duration={500} >power</Link>
+ <Link activeClass="active" className="test1" to="talent" spy={true} smooth={true} duration={500} >Talent</Link>
+ <Link activeClass="active" className="test1" to="gig" spy={true} smooth={true} duration={500} >gig</Link>
+ <Link activeClass="active" className="test1" to="questions" spy={true} smooth={true} duration={500} >questions</Link>
+ <Link activeClass="active" className="test1" to="success" spy={true} smooth={true} duration={500} >success</Link>
+ <Link activeClass="active" className="test1" to="works" spy={true} smooth={true} duration={500} >works</Link>
 
 {/*Mission*/}
+              <Element name="mission">
               <Paper className="Paper-Column" zDepth={1} rounded={true}>
                   <h2 className="Head-Text"> Our Mission</h2>
                   <p className="Sub-Text">
@@ -49,8 +64,10 @@ class Content extends Component {
                       Long term we set out to create a virtual workspace that will dramatically enhance human creative output, and break down the significant skill and cultural barriers that exist in the world today through a unique collaborative process.
                   </p>
               </Paper>
+              </Element>
 
 {/*Power of Contribution*/}
+              <Element name="power">
               <Paper className="Paper-Column" zDepth={1} rounded={true}>
                   <h2 className="Head-Text"> The Power of Contribution</h2>
 
@@ -65,9 +82,9 @@ class Content extends Component {
 
                   </div>
               </Paper>
-
+              </Element>
 {/*Working with our Talent*/}
-
+              <Element name="talent">
               <Paper className="Paper-Column" zDepth={1} rounded={true}>
                   <h2 className="Head-Text"> The Power of Contribution</h2>
 <div>
@@ -96,9 +113,10 @@ class Content extends Component {
                       </p>
 </div>
                   </Paper>
-
+              </Element>
 
 {/*Gig & Hire*/}
+              <Element name="gig">
               <Paper className="Paper-Column" zDepth={1} rounded={true} style={{marginTop: "3%"}}>
                   <h2 className="Head-Text"> How to Post a Gig and Hire a Freelancer</h2>
                   <p className="Sub-Text">
@@ -197,9 +215,10 @@ class Content extends Component {
 
                   </Card>
               </Paper>
-
+              </Element>
 
 {/*Other Questions*/}
+              <Element name="questions">
               <Paper className="Paper-Column" zDepth={1} rounded={true}>
                   <h2 className="Head-Text"> Other Questions</h2>
                   <div>
@@ -226,15 +245,18 @@ class Content extends Component {
                       </p>
                   </div>
               </Paper>
-
+              </Element>
 {/*Gig Success Stories*/}
+              <Element name="success">
               <center style={{marginTop:"3%", marginLeft: "18%",marginRight:"18%"}}><h2 className="Middle-Text"><span className="Middle-Span">
                   See some of our Gig success stories here</span></h2></center>
               <div className="Middle-Pane2">
 
               </div>
+              </Element>
 
 {/*How Collaborizm Works*/}
+              <Element name="works">
               <Paper className="Paper-Column" zDepth={1} rounded={true}>
                   <h2 className="Head-Text"> How Collaborizm Works</h2>
                   <div>
@@ -264,7 +286,7 @@ class Content extends Component {
                   </div>
 
                   </Paper>
-
+              </Element>
 {/*Developed By*/}
             <div className="Credit">
                  <p>Designed By Collaborizm User Tejas Ozarkar</p>
